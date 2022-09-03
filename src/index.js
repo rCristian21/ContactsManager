@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './style.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./style.css";
+import Counter from './Counter'
 
+const el = <Counter />; 
 ReactDOM.render(
-  <h1>Hello, React!</h1>,
+  el, 
   document.getElementById('root')
 );
