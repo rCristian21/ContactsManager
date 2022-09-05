@@ -1,11 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./style.css";
-import Counter from './Counter'
-import Converter from "./Converter";
+import ContactsManager from "./ContactsManager";
 
-const el = <Converter />; 
-ReactDOM.render(
-  el, 
-  document.getElementById('root')
-);
+const contacts = ["James Smith", "Thomas Anderson", "Cristian"];
+
+ReactDOM.render(<ContactsManager data={contacts} />, document.getElementById("root"));
