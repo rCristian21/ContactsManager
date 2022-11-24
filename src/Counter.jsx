@@ -1,21 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { connect } from 'react-redux'
 
-function Counter() {
-  const [counter, setCounter] = useState(0);
-
-  function increment() {
-    setCounter(counter+1);
-  }
-  function reset(){
-    setCounter(counter-counter)
-  }
-  return <div>
-  <p>{counter}</p>
-  <button onClick={increment}>Increment</button>
-  <button onClick={reset}>⏹️</button>
-  </div>;
+// Action creator
+function incrementCounter(num) {
+  return { type: 'INCREMENT', num: num }
 }
 
+function Counter(props) {
+  function handleClick() {
+    props.incrementCounter(1);
+  }
+    return <div>
+    <p>{props.count}</p>
+    <button onClick={handleClick}>Increment</button>
+    </div>;
+}
 
+function mapStateToProps(state) {
+  return {
+    count: state.count
+  };
+}
+const mapDispatchToProps = {
+  incrementCounter
+}
 
-export default Counter;
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);
