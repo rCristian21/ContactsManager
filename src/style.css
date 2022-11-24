@@ -7,7 +7,7 @@ form input{
 
     border-radius: 12px;
     padding: 10px;
-    border-color: blue;
+    border-color: rgb(0, 0, 0);
 }
 form button {
     background-color: blue;
