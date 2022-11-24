@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rCristianH/ContactsManager/static/css/main.024ffd0c.css",
+    "main.js": "/rCristianH/ContactsManager/static/js/main.6f1c199a.js",
+    "index.html": "/rCristianH/ContactsManager/index.html",
+    "main.024ffd0c.css.map": "/rCristianH/ContactsManager/static/css/main.024ffd0c.css.map",
+    "main.6f1c199a.js.map": "/rCristianH/ContactsManager/static/js/main.6f1c199a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.024ffd0c.css",
+    "static/js/main.6f1c199a.js"
+  ]
+}
